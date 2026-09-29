@@ -46,7 +46,7 @@ function getMeWalkReport(){
 // use my data from the first api(lat and long) and pass it as param to the second api
 function getTemperature(lat,long){
 
-    const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${long}&current=temperature_2m,temperature_2m_min`
+    const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${long}&current=temperature_2m`
     fetch(url)
     .then(res=>res.json())
     .then(data=>{
